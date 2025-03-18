@@ -111,9 +111,9 @@ API Gateway berfungsi sebagai pintu masuk utama untuk semua permintaan dari klie
 ### **Struktur Utama Proyek**
 Berikut adalah gambaran struktur utama proyek setelah pemisahan microservices:
 
-![Penambahan Direktori Folder Microservice](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+![Penambahan Direktori Folder Microservice](SSan/1.png)
 
-![Penghapusan Beberapa Folder Yang Tidak Diperlukan](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+![Penghapusan Beberapa Folder Yang Tidak Diperlukan](SSan/2.png)
 
 Melakukan Update Pada code setting.py di semua file service (auth, product, order)
 ```
@@ -192,7 +192,7 @@ def get_product_details(request, product_id):
     return JsonResponse({'error': 'Product not found'}, status=404)
 ```
 
-![Tampilan Akhir Direktori](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+![Tampilan Akhir Direktori](SSan/3.png)
 
 ---
 
@@ -253,7 +253,7 @@ CREATE TABLE users (
     role VARCHAR(50)
 );
 ```
-![Dekomposing database setiap service](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+![Dekomposing database setiap service](SSan/4.png)
 
 --- 
 
